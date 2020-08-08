@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400&display=swap');
+a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+a{
+    color:inherit;
+}
+.logo{
+    font-family: 'Red Rose', cursive;
+    font-size: 2rem;
+    margin:1rem;
+}
+body{
+    min-height: 100vh;
+    background-color: #ECF0F1
+}
+#exampleModal{
+    background:none;
+}
+.modal{
+    min-height: 100vh;
+}
+.modal-footer{
+    background:none !important;
+    border-top:none !important;
+}
+.wrapper{
+    width:100%;
+    min-height:80vh;
+}
+.inner{
+    margin:2rem auto;
+    width:700px;
+    background-color: white;
+    padding:30px;
+}
+.candidateCard{
+    padding:20px;
+    font-size: 1.2rem;
+    border:0.5px solid grey;
+    margin:5px;
+    cursor: pointer;
+}
+.candidateCard:hover{
+    background:#DCDCDC;
+}
+input[type='text']{
+    margin-left: -20px !important;
+}
+.row{
+    margin-bottom: 0px !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+@media only screen and (max-width: 500px) {
+    .inner{
+        width:90%;
+    }
+    .brand-logo{
+        text-align: left;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+  }
