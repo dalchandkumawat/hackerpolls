@@ -1,6 +1,6 @@
 const express= require('express');
 const mongoose = require('mongoose');
-const MONGOURI = 'mongodb+srv://dbUser:dbUserPassword@cluster0.z4ijc.mongodb.net/hackerpolls?retryWrites=true&w=majority';
+const MONGOURI = 'mongodb+srv://test:test@cluster0.0oxtg.mongodb.net/voting?retryWrites=true&w=majority'';
 const PORT = process.env.PORT || 5000
 const app=express();
 
