@@ -21,7 +21,7 @@ const Candidate = (props) => {
             setEditCandidateId("AddCandidate/"+result[0]._id);
         })
         .catch(err => console.log(err));
-    }, [])
+    }, [enableVote])
     useEffect(()=>{
         if(ip!==null){
             let votesList=[];
