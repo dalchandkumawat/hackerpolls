@@ -1,8 +1,9 @@
 import React,{useState,useEffect} from 'react';
-import {Link} from 'react-router-dom';
+import {Link,useHistory} from 'react-router-dom';
 import M from 'materialize-css';
 const Navbar = (props) => {
     const [adminCode,setAdminCode] = useState("");
+    const history = useHistory();
     const login = () =>{
         fetch('/adminLogin',{
             method:"post",
@@ -39,6 +40,7 @@ const Navbar = (props) => {
     const logout = ()=>{
         localStorage.clear();
         props.onChange(false);
+        history.push('/');
         M.toast({html:"Logged out",classes:"#43a047 green darken-1"})
     }
     return (
